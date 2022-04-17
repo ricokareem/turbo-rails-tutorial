@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ApplicationController < ActionController::Base
   # Test Turbo Progress Bar
   # before_action -> { sleep 3 }

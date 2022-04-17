@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class LineItem < ApplicationRecord
   belongs_to :line_item_date
 
@@ -10,5 +12,4 @@ class LineItem < ApplicationRecord
   def total_price
     quantity * unit_price
   end
-
 end
