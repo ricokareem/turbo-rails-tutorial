@@ -43,6 +43,7 @@ class QuotesTest < ApplicationSystemTestCase
     assert_text @quote.name
 
     click_on "Delete", match: :first
+    page.driver.browser.switch_to.alert.accept
     assert_no_text @quote.name
   end
 end
